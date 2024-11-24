@@ -1,6 +1,6 @@
 import axios from "axios";
 const URL = 'https://www.google.com/recaptcha/api/siteverify'
-const secretkey = ""
+const secretkey = NODE_ENV
 
 async function validateToken(token) {
 
@@ -17,5 +17,3 @@ async function validateToken(token) {
 }
 
 export default validateToken
-
-//secret site key = 
